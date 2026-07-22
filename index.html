@@ -13,6 +13,9 @@
         <link rel="stylesheet" href="css/sections.css">
         <link rel="stylesheet" href="css/images.css">
         <link rel="stylesheet" href="css/about-section.css">
+        <link rel="stylesheet" href="css/experience-section.css">
+        <link rel="stylesheet" href="css/aesthetics.css">
+
         
         <!-- Font Imports -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,15 +60,44 @@
 
         <main>
             <section class="about">
-                <h1>Hello, I am Marc Lopez</h1>
-                <h2>University of Toronto Chemical Engineering.</h2>
-                <h2>The Hospital for Sick Children Research Summer Student.</h2>
+                <h1>
+                    <span id="typing-text"></span><span class="cursor">|</span>
+                </h1>
+                <h2>Chemical Engineering Student at the University of Toronto</h2>
+                <h2>Summer Research Student at The Hospital for Sick Children</h2>
+                <h2>Exploring Artificial Intelligence in Healthcare</h2>
+                <div class="about-buttons">
+                    <button class="download-resume" 
+                    onclick="downloadPdf()">
+                        Download Resume
+                    </button>
+                    <button class="project-direct">
+                        View Projects
+                    </button>
+                </div>
             </section>
-            <section>
-
+            <section class="Experience">
+                <h1></h1>
             </section>
         </main>
+        <script src="/js-scripts/main.js"></script>
+        <script>
+            const text = "Hello, I am Marc Lopez";
+            const typingText = document.getElementById("typing-text");
 
+            let index = 0;
+
+            function typeText() {
+                if (index < text.length) {
+                    typingText.textContent += text[index];
+                    index++;
+                    setTimeout(typeText, 100);
+                }
+                else {
+                    
+                }
+            }
+            typeText();
+        </script>
     </body>
-
 </html>

@@ -1,3 +1,6 @@
 css -
-overflow: hidden
-hides whatever content is too big
+    overflow: hidden
+    hides whatever content is too big
+
+    inset: 0
+    short for top: 0, bottom: 0, left: 0, right: 0
