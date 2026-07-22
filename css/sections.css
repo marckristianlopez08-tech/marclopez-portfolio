@@ -1,0 +1,51 @@
+.grid-background {
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    overflow: hidden;
+    background: white;
+}
+
+.grid-background::before {
+    content: "";
+    position: absolute;
+    inset: -40%;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.055) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.055) 1px,
+            transparent 1px
+        );
+
+    background-size: 34px 34px;
+
+    transform: rotate(-12deg) scale(1.4);
+    transform-origin: center;
+}
+
+.grid-background::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 0.16) 1px,
+        transparent 1.5px
+    );
+
+    background-size: 18px 18px;
+
+    mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 18%,
+        black 82%,
+        transparent 100%
+    );
+}

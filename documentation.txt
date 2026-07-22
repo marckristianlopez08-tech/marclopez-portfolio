@@ -1,0 +1,3 @@
+css -
+overflow: hidden
+hides whatever content is too big

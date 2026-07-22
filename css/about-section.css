@@ -1,0 +1,29 @@
+main {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 100%;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    height: 950px;
+}
+
+.about h1{
+    font-size: 90px;
+    font-weight: 400;
+    font-family: 'Jost';
+    margin: 0;
+}
+
+.about h2{
+    font-size: 36px;
+    font-family: 'Jost';
+    font-weight: 300;
+    margin: 10px;
+}
