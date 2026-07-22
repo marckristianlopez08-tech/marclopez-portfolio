@@ -49,7 +49,7 @@ main {
     transition: opacity 0.3s, background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
-.download-resume:hovexwr, .project-direct:hover {
+.download-resume:hover, .project-direct:hover {
     opacity: 0.4;
 }
 
